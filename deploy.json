@@ -1,0 +1,13 @@
+{
+  "name": "clumsy-game",
+  "version": "1.0.0",
+  "description": "A simple game project",
+  "main": "index.js",
+  "scripts": {
+    "install": "cp -r * ./dist && rm -rf ./dist/.git ./dist/.gitignore ./dist/Gruntfile.js ./dist/LICENSE.md ./dist/node_modules ./dist/package.json ./dist/package-lock.json ./dist/README.md",
+    "build": "npm run install"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
+
