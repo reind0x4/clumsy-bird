@@ -1,16 +1,15 @@
 {
   "name": "your-project-name",
   "version": "1.0.0",
-  "description": "A description of your project",
-  "main": "index.js",
+  "description": "deployment",
   "scripts": {
-    "build": "cpy '**/*' --parents --ignore '.git' --ignore '.gitignore' --ignore 'node_modules' --output './dist'"
+    "build": "mkdir -p dist && npx cpy-cli . dist && rm -rf dist/.git dist/.gitignore dist/node_modules dist/README.MD dist/CUSTOMIZING.md dist/CUSTOMIZING.md"
   },
   "dependencies": {
-    "cpy": "^9.1.0"
+    "cpy-cli": "^5.0.0"
   },
   "devDependencies": {},
-  "author": "Your Name",
+  "author": "reind",
   "license": "MIT"
 }
 
